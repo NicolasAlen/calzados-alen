@@ -15,6 +15,7 @@ body {
   text-align: center;
   position: fixed;
   width: 100%;
+ 
 }
 
 ul {
@@ -50,10 +51,34 @@ h1 {
   border-bottom: solid 1px rgb(201, 196, 196, 0.5);
   border-top: solid 1px rgb(201, 196, 196, 0.5);
 }
+.imagen-menu img{
+  width: 70%;
+  
+}
+.imagen-menu{
+  display: flex;
+  flex-wrap: nowrap;
+  background: rgb(231, 231, 231);
+  margin-bottom: 15px;
+  margin-left: 15px;
+  text-align: center;
+  align-items: center;
+  border: solid 1px;
+  border-radius: 7px;
+  width: 60%;
+  
+  transform: rotateY(360deg);
+  transition: transform 3s;
+}
+.imagen-menu:hover {
+  transform: rotateX(0deg);
+  
+}
 
 footer {
   text-align: center;
   background: black;
+  margin-top: 10px;
 }
 h4 {
   display: inline-block;
@@ -87,19 +112,23 @@ form {
 }
 /*productos*/
 .productos1 {
-  /*display: flex;
-  justify-content: space-around;*/
-  grid-column: 2 / 12;
-  grid-row: 4;
-  text-align: center; 
+ display: grid;
+ grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 5px;
+  background-color: #eeeeeb; 
+  
 }
 .productos {
   display: flex;
   justify-content: space-around;
+  grid-column: 2 / 12;
+  grid-row: 4;
+  text-align: center; 
 }
-.productos1 productos:hover{
 
-}
+
+
 .container {
   display: block;
   align-content: center;
@@ -114,11 +143,13 @@ form {
     background: rgb(236, 234, 234);
     box-shadow: 7px 7px 5px #888;
   }
-
+h4 b{
+  color: black;
+}
 
 .card, .card button:hover {
   transition: 1s;
-  border: #546a7b solid 5px;
+  border: #7fa9c9 solid 5px;
   border-radius: 10px;
   margin: 5px;
   object-fit: cover;
@@ -130,7 +161,23 @@ form {
   background-color: rgb(152, 205, 226);
   padding: 10px;
   border-radius: 4px;
+  
 }
+@media screen and (max-width: 768px) {
+  #contacto,
+  #nosotros,
+  #menuheader {
+    display: block;
+    text-align: center;
+    position: relative; }
+  .productos {
+    display: block;
+    width: 98%; }
+  .productos2, .productos3 {
+    display: none; }
+  img {
+    width: 25%; }
+  }
 /*ubicacion*/
 section iframe {
   display: inline-block;
