@@ -15,7 +15,7 @@ body {
   text-align: center;
   position: fixed;
   width: 100%;
- 
+ z-index: 10;
 }
 
 ul {
@@ -55,6 +55,10 @@ h1 {
   width: 70%;
   
 }
+.img2{
+  display: flex;
+  justify-content: flex-end;
+}
 .imagen-menu{
   display: flex;
   flex-wrap: nowrap;
@@ -74,7 +78,24 @@ h1 {
   transform: rotateX(0deg);
   
 }
-
+.imagen-menu2{
+  display: flex;
+  flex-wrap: nowrap;
+  background: rgb(231, 231, 231);
+  margin-bottom: 15px;
+  margin-left: 15px;
+  text-align: center;
+  align-items: center;
+  border: solid 1px;
+  border-radius: 7px;
+  width: 60%;
+  
+  transform: rotateY(360deg);
+  transition: transform 3s;
+}
+.imagen-menu2:hover {
+  transform: rotateX(0deg);
+}
 footer {
   text-align: center;
   background: black;
@@ -163,21 +184,8 @@ h4 b{
   border-radius: 4px;
   
 }
-@media screen and (max-width: 768px) {
-  #contacto,
-  #nosotros,
-  #menuheader {
-    display: block;
-    text-align: center;
-    position: relative; }
-  .productos {
-    display: block;
-    width: 98%; }
-  .productos2, .productos3 {
-    display: none; }
-  img {
-    width: 25%; }
-  }
+
+  
 /*ubicacion*/
 section iframe {
   display: inline-block;
