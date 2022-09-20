@@ -10,7 +10,7 @@ body {
 .nav {
   display: flex;
   justify-content: center;
-  background-color: rgba(201, 196, 196, 0.7);
+  background-color: rgba(201, 196, 196, 0.9);
   padding: 40px;
   text-align: center;
   position: fixed;
@@ -115,16 +115,15 @@ header img {
   width: 100%;
 }
 /*contacto*/
-article {
-  background: rgb(77, 77, 156);
-  display: inline-block;
-  margin: 10px 0px 10px 0px;
-  margin-left: 40%;
+
+.container{
+  background:#7fa9c9;
+  border-radius: 8px;
+  margin-top: 10px;
+  width: 850px;
 }
-form {
-  height: 400px;
-  font-size: large;
-  padding: 10px;
+legend{
+  color: rgb(235, 229, 229);
 }
 /*galeria*/
 .galeria {
