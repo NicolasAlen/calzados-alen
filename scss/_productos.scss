@@ -1,0 +1,48 @@
+.productos1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 5px;
+    background-color: #eeeeeb;
+}
+.productos {
+    display: flex;
+    justify-content: space-around;
+    grid-column: 2 / 12;
+    grid-row: 4;
+    text-align: center;
+}
+.contenedor {
+    display: block;
+    align-content: center;
+}
+.contenedor {
+    display: block;
+    align-content: center;
+}
+h4{
+    b{
+        color: black;
+    }
+}
+.card{
+    transition: 1s;
+    border: #a7b2b9 solid 5px;
+    border-radius: 10px;
+    margin: 5px;
+    object-fit: cover;
+    & button:hover{ transition: 1s;
+        border: #a7b2b9 solid 5px;
+        border-radius: 10px;
+        margin: 5px;
+        object-fit: cover;
+    }
+}
+.btn-comprar {
+    font-size: 30px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgb(19, 18, 18);
+    background-color: rgb(150, 154, 156);
+    padding: 10px;
+    border-radius: 4px;
+}
