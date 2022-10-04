@@ -45,7 +45,7 @@ h1 {
     width: 100%; }
   img {
     width: 100%; } }
-/* index */
+
 .img2 {
   display: flex;
   justify-content: flex-end; }
@@ -54,12 +54,12 @@ h1 {
   display: flex;
   justify-content: flex-start; }
 
-.imagen-menu {
+.imagen-menu, .imagen-menu2 {
   display: flex;
   flex-wrap: nowrap;
   background: #e7e7e7;
-  margin-bottom: 15px;
-  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
   align-items: center;
   border: solid 1px;
@@ -68,26 +68,9 @@ h1 {
   overflow: auto;
   transform: rotateX(360deg);
   transition: transform 3s; }
-  .imagen-menu img {
+  .imagen-menu img, .imagen-menu2 img {
     width: 70%; }
-  .imagen-menu:hover {
-    transform: rotateY(0deg); }
-
-.imagen-menu2 {
-  display: flex;
-  flex-wrap: nowrap;
-  background: #e7e7e7;
-  margin-bottom: 15px;
-  margin-right: 15px;
-  text-align: center;
-  align-items: center;
-  border: solid 1px;
-  border-radius: 7px;
-  width: 60%;
-  overflow: auto;
-  transform: rotateX(360deg);
-  transition: transform 3s; }
-  .imagen-menu2:hover {
+  .imagen-menu:hover, .imagen-menu2:hover {
     transform: rotateY(0deg); }
 
 header img {
@@ -99,7 +82,7 @@ header img {
 @media screen and (max-width: 768px) {
   .navbar {
     position: absolute; }
-  .imagen-menu {
+  .imagen-menu, .imagen-menu2 {
     width: 50%;
     display: inline-block; }
   .imagen-menu2 {
@@ -107,9 +90,9 @@ header img {
     display: inline-block; }
   .imagen-menu2 img {
     width: 70%; }
-  .imagen-menu p {
+  .imagen-menu p, .imagen-menu2 p {
     display: inline-block; } }
-/* contacto */
+
 .container {
   background: #7fa9c9;
   border-radius: 8px;
@@ -122,7 +105,7 @@ header img {
 
 legend {
   color: #ebe5e5; }
-/* productos */
+
 .productos1 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -136,10 +119,6 @@ legend {
   grid-column: 2 / 12;
   grid-row: 4;
   text-align: center; }
-
-.contenedor {
-  display: block;
-  align-content: center; }
 
 .contenedor {
   display: block;
@@ -168,11 +147,11 @@ h4 b {
   background-color: #969a9c;
   padding: 10px;
   border-radius: 4px; }
-/* ubicacion */
+
 section iframe {
   display: inline-block;
   margin-left: 30%; }
-/* galeria */
+
 .galeria {
   border: solid 1px;
   border-radius: 5px; }

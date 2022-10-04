@@ -7,15 +7,21 @@
     display: flex;
     justify-content: flex-start;
 }
-
+$imagenes-menu: (
+    color: rgb(231, 231, 231),
+    alineacion: center
+);
+@mixin margen ($margen-top, $margen-bot){
+    margin-top: $margen-top;
+    margin-bottom: $margen-bot;
+}
 .imagen-menu {
     display: flex;
     flex-wrap: nowrap;
-    background: rgb(231, 231, 231);
-    margin-bottom: 15px;
-    margin-left: 15px;
-    text-align: center;
-    align-items: center;
+    background: map-get($imagenes-menu, color);
+    @include margen(10px, 10px);
+    text-align: map-get($imagenes-menu, alineacion);
+    align-items: map-get($imagenes-menu, alineacion);
     border: solid 1px;
     border-radius: 7px;
     width: 60%;
@@ -33,23 +39,8 @@
 }
 
 .imagen-menu2 {
-    display: flex;
-    flex-wrap: nowrap;
-    background: rgb(231, 231, 231);
-    margin-bottom: 15px;
-    margin-right: 15px;
-    text-align: center;
-    align-items: center;
-    border: solid 1px;
-    border-radius: 7px;
-    width: 60%;
-    overflow: auto;
-    transform: rotateX(360deg);
-    transition: transform 3s;
+@extend .imagen-menu;
 
-    &:hover {
-        transform: rotateY(0deg);
-    }
 }
 header img {
     width: 100%;
