@@ -8,7 +8,7 @@
     justify-content: flex-start;
 }
 $imagenes-menu: (
-    color: rgb(231, 231, 231),
+    color: rgb(209, 199, 199),
     alineacion: center
 );
 @mixin margen ($margen-top, $margen-bot){
@@ -28,7 +28,8 @@ $imagenes-menu: (
     overflow: auto;
     transform: rotateX(360deg);
     transition: transform 3s;
-
+    margin-left: 15px;
+    margin-right: 15px;
     img {
         width: 70%;
     }
@@ -65,5 +66,12 @@ header img {
     }
     .imagen-menu p {
     display: inline-block;
+    }
+}
+@media (max-width:600px){
+    .imagen-menu{
+        display: block;
+        width: 100%;
+
     }
 }

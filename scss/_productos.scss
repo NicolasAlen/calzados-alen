@@ -12,22 +12,21 @@
     grid-row: 4;
     text-align: center;
 }
-.contenedor {
-    display: block;
-    align-content: center;
-}
+
 
 h4{
     b{
         color: black;
+        font-family:Arial, Helvetica, sans-serif;
     }
 }
 .card{
     transition: 1s;
-    border: #a7b2b9 solid 5px;
-    border-radius: 10px;
+    border: solid 1px;
+    border-radius: 7px;
     margin: 5px;
     object-fit: cover;
+    box-shadow: 7px 7px 5px #888;
     & button:hover{ transition: 1s;
         border: #a7b2b9 solid 5px;
         border-radius: 10px;
@@ -38,8 +37,24 @@ h4{
 .btn-comprar {
     font-size: 30px;
     font-family: Georgia, "Times New Roman", Times, serif;
-    color: rgb(19, 18, 18);
+    color: rgb(63, 61, 61);
     background-color: rgb(150, 154, 156);
     padding: 10px;
     border-radius: 4px;
+}
+
+.card button, .card button:hover button {
+    
+    padding: 1px;
+    color: white;
+    text-align: center;
+    width: 90%;
+    font-size: 20px; 
+}
+
+
+@media (max-width: 600px){
+    .productos{
+        display: inline-block;
+    }
 }

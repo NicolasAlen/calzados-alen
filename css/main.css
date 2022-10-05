@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  background: white; }
+  background-color: #eeeeeb; }
 
 .navbar {
   display: flex;
@@ -40,6 +40,9 @@ h1 {
   border-bottom: solid 1px rgba(201, 196, 196, 0.5);
   border-top: solid 1px rgba(201, 196, 196, 0.5); }
 
+footer {
+  margin-top: 10px; }
+
 @media (max-width: 575px) {
   footer {
     width: 100%; }
@@ -57,7 +60,7 @@ h1 {
 .imagen-menu, .imagen-menu2 {
   display: flex;
   flex-wrap: nowrap;
-  background: #e7e7e7;
+  background: #d1c7c7;
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
@@ -67,7 +70,9 @@ h1 {
   width: 60%;
   overflow: auto;
   transform: rotateX(360deg);
-  transition: transform 3s; }
+  transition: transform 3s;
+  margin-left: 15px;
+  margin-right: 15px; }
   .imagen-menu img, .imagen-menu2 img {
     width: 70%; }
   .imagen-menu:hover, .imagen-menu2:hover {
@@ -92,6 +97,11 @@ header img {
     width: 70%; }
   .imagen-menu p, .imagen-menu2 p {
     display: inline-block; } }
+
+@media (max-width: 600px) {
+  .imagen-menu, .imagen-menu2 {
+    display: block;
+    width: 100%; } }
 
 .container {
   background: #7fa9c9;
@@ -120,19 +130,17 @@ legend {
   grid-row: 4;
   text-align: center; }
 
-.contenedor {
-  display: block;
-  align-content: center; }
-
 h4 b {
-  color: black; }
+  color: black;
+  font-family: Arial, Helvetica, sans-serif; }
 
 .card {
   transition: 1s;
-  border: #a7b2b9 solid 5px;
-  border-radius: 10px;
+  border: solid 1px;
+  border-radius: 7px;
   margin: 5px;
-  object-fit: cover; }
+  object-fit: cover;
+  box-shadow: 7px 7px 5px #888; }
   .card button:hover {
     transition: 1s;
     border: #a7b2b9 solid 5px;
@@ -143,15 +151,30 @@ h4 b {
 .btn-comprar {
   font-size: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: #131212;
+  color: #3f3d3d;
   background-color: #969a9c;
   padding: 10px;
   border-radius: 4px; }
 
-section iframe {
-  display: inline-block;
-  margin-left: 30%; }
+.card button, .card button:hover button {
+  padding: 1px;
+  color: white;
+  text-align: center;
+  width: 90%;
+  font-size: 20px; }
 
-.galeria {
-  border: solid 1px;
-  border-radius: 5px; }
+@media (max-width: 600px) {
+  .productos {
+    display: inline-block; } }
+
+section h2 {
+  text-align: center;
+  margin: 10px; }
+
+.mapa {
+  display: flex;
+  justify-content: center; }
+
+.row {
+  padding-right: 10px;
+  padding-left: 10px; }
