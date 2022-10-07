@@ -1,3 +1,4 @@
+/* general */
 * {
   margin: 0px;
   padding: 0px;
@@ -43,12 +44,13 @@ h1 {
 footer {
   margin-top: 10px; }
 
-@media (max-width: 575px) {
+@media (max-width: 600px) {
   footer {
     width: 100%; }
   img {
     width: 100%; } }
 
+/* index */
 .img2 {
   display: flex;
   justify-content: flex-end; }
@@ -103,6 +105,7 @@ header img {
     display: block;
     width: 100%; } }
 
+/* contacto */
 .container {
   background: #7fa9c9;
   border-radius: 8px;
@@ -116,6 +119,12 @@ header img {
 legend {
   color: #ebe5e5; }
 
+@media (max-width: 600px) {
+  .container {
+    display: block;
+    width: auto; } }
+
+/* productos */
 .productos1 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -156,7 +165,8 @@ h4 b {
   padding: 10px;
   border-radius: 4px; }
 
-.card button, .card button:hover button {
+.card button,
+.card button:hover button {
   padding: 1px;
   color: white;
   text-align: center;
@@ -167,6 +177,7 @@ h4 b {
   .productos {
     display: inline-block; } }
 
+/* ubicacion */
 section h2 {
   text-align: center;
   margin: 10px; }
@@ -175,6 +186,9 @@ section h2 {
   display: flex;
   justify-content: center; }
 
+/* galeria */
 .row {
   padding-right: 10px;
-  padding-left: 10px; }
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-right: 10px; }

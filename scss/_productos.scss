@@ -1,3 +1,4 @@
+/* productos */
 .productos1 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -5,6 +6,7 @@
     grid-gap: 5px;
     background-color: #eeeeeb;
 }
+
 .productos {
     display: flex;
     justify-content: space-around;
@@ -14,26 +16,30 @@
 }
 
 
-h4{
-    b{
+h4 {
+    b {
         color: black;
-        font-family:Arial, Helvetica, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
     }
 }
-.card{
+
+.card {
     transition: 1s;
     border: solid 1px;
     border-radius: 7px;
     margin: 5px;
     object-fit: cover;
     box-shadow: 7px 7px 5px #888;
-    & button:hover{ transition: 1s;
+
+    & button:hover {
+        transition: 1s;
         border: #a7b2b9 solid 5px;
         border-radius: 10px;
         margin: 5px;
         object-fit: cover;
     }
 }
+
 .btn-comprar {
     font-size: 30px;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -43,18 +49,19 @@ h4{
     border-radius: 4px;
 }
 
-.card button, .card button:hover button {
-    
+.card button,
+.card button:hover button {
+
     padding: 1px;
     color: white;
     text-align: center;
     width: 90%;
-    font-size: 20px; 
+    font-size: 20px;
 }
 
 
-@media (max-width: 600px){
-    .productos{
+@media (max-width: 600px) {
+    .productos {
         display: inline-block;
     }
 }

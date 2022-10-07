@@ -1,3 +1,4 @@
+/* general */
 * {
     margin: 0px;
     padding: 0px;
@@ -54,10 +55,12 @@ h1 {
 }
 footer{
     margin-top: 10px;
+    
 }
-@media (max-width: 575px) {
+@media (max-width: 600px) {
     footer {
     width: 100%;
+    
     }
     img {
     width: 100%;

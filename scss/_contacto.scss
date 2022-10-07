@@ -1,3 +1,4 @@
+/* contacto */
 .container {
     background: #7fa9c9;
     border-radius: 8px;
@@ -10,4 +11,10 @@
 }
 legend {
     color: rgb(235, 229, 229);
+}
+@media (max-width: 600px){
+    .container{
+        display: block;
+        width: auto;
+    }
 }
