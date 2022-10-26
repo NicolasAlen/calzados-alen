@@ -84,7 +84,7 @@ header img {
   width: 100%; }
 
 .parrafo {
-  display: flex; }
+  padding: 5px; }
 
 @media screen and (max-width: 768px) {
   .navbar {
